@@ -6,7 +6,7 @@ const ResetConfirmation = ({ setUserData, setShowResetConfirmation }) => {
         try {
             setUserData(prev => ({ ...prev, achievedDays: 0, totalDays: undefined, streak: 0 }));
             setShowResetConfirmation(false);
-            await axios.put("http://localhost:8080/achievement", { userData:{achievedDays: 0, totalDays: undefined, streak: 0,name:"Mohamed"} })
+            await axios.put("https://achievement-progress-streak-json-server.onrender.com/achievement", { userData:{achievedDays: 0, totalDays: undefined, streak: 0,name:"Mohamed"} })
         } catch (error) {
             console.error("Error resetting progress:", error);
         }

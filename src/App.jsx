@@ -16,7 +16,7 @@ const App = () => {
     const fetchUserData = async () => {
       try {
         setLoading(true)
-        const res = await axios.get("http://localhost:8080/achievement")
+        const res = await axios.get("https://achievement-progress-streak-json-server.onrender.com/achievement")
         setUserData(res.data.userData)
         setLoading(false)
       } catch (error) {

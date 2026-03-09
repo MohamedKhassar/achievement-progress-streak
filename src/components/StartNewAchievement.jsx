@@ -6,7 +6,7 @@ const StartNewAchievement = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.put("http://localhost:8080/achievement", {
+            await axios.put("https://achievement-progress-streak-json-server.onrender.com/achievement", {
                 userData: {
                     totalDays, achievedDays: 0, streak: 0, name: "Mohamed",
                     // lastCheckIn: new Date().toISOString().split("T")[0],

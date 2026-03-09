@@ -13,6 +13,7 @@ const StartNewAchievement = () => {
 
                 }
             })
+            window.location.reload()
         } catch (error) {
             console.error("Error starting new achievement:", error);
         }

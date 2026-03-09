@@ -38,7 +38,7 @@ const App = () => {
     };
 
     try {
-      await axios.put("http://localhost:8080/achievement", {
+      await axios.put("https://achievement-progress-streak-json-server.onrender.com/achievement", {
         userData: updatedData
       });
 
@@ -74,7 +74,7 @@ const App = () => {
         lastCheckIn: today.toISOString().split("T")[0]
       };
 
-      await axios.patch("http://localhost:8080/achievement", {
+      await axios.patch("https://achievement-progress-streak-json-server.onrender.com/achievement", {
         userData: updatedData
       });
 

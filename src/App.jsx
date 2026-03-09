@@ -96,7 +96,7 @@ const App = () => {
             <CircleProgressbar loading={loading} achievedDays={userData.achievedDays} totalDays={userData.totalDays} />
             <StreakCircleProgressbar loading={loading} streak={userData.streak} />
           </section>
-          <section className='mx-auto grid grid-cols-2 mt-10 place-items-end-safe'>
+          <section className='md:mx-auto grid grid-cols-2 max-lg:grid-cols-1 mt-10 gap-10 md:w-1/2 mx-10'>
             {
               (userData.achievedDays !== userData.totalDays) &&
                 (userData.lastCheckIn !== new Date().toISOString().split("T")[0]) ?

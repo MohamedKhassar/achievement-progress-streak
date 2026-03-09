@@ -1,0 +1,12 @@
+{
+  "achievement": {
+    "userData": {
+      "totalDays": 10,
+      "achievedDays": 1,
+      "streak": 0,
+      "lastCheckIn": "2026-03-09",
+      "name": "Mohamed"
+    }
+  },
+  "$schema": "./node_modules/json-server/schema.json"
+}

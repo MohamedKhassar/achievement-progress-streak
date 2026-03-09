@@ -11,7 +11,7 @@ const CircleProgressbar = ({achievedDays, totalDays,loading=false}) => {
           Achievements Progress
         </h1>
         <p className='text-gray-500'>
-          {progress<=50?"You haven't completed your achievements yet.":progress<=99?'You\'re making good progress!':progress==100?"You've completed all achievements!":"bg-slate-600"}
+          {progress<=50?"You haven't completed your achievements yet.":progress<=99?'You\'re making good progress!':"You've completed all achievements!"}
         </p>
       </div>
       <div className={cn('rounded-full aspect-square p-4 w-80 mx-auto',

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './app.css'
+import './App.css'
 import CircleProgressbar from './components/CircleProgressbar'
 import StreakCircleProgressbar from './components/StreakCircleProgressbar'
 import axios from 'axios'
